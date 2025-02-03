@@ -1,0 +1,16 @@
+import { Theme } from "globals.slint";
+
+export component AppWindow inherits Window {
+    in-out property <int> counter: 42;
+    callback request-increase-value();
+    Rectangle {
+        background: Theme.primary;
+        VerticalLayout {
+            Text {
+                text: "Counter: \{root.counter}";
+                font-family: Theme.font-family;
+                color: Theme.on-primary;
+            }
+        }
+    }
+}
