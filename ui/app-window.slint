@@ -1,4 +1,7 @@
-import { Theme } from "globals.slint";
+import { Theme, Logic } from "globals.slint";
+import { Button } from "components/elements.slint";
+
+export { Theme, Logic }
 
 export component AppWindow inherits Window {
     in-out property <int> counter: 42;
@@ -6,10 +9,19 @@ export component AppWindow inherits Window {
     Rectangle {
         background: Theme.primary;
         VerticalLayout {
+            padding: 10px;
+            spacing: 10px;
             Text {
                 text: "Counter: \{root.counter}";
                 font-family: Theme.font-family;
+                font-size: Theme.font-size-title-large;
                 color: Theme.on-primary;
+            }
+            Button {
+                text: "Notification";
+                clicked => { 
+                    Logic.notify("Coucou");
+                }
             }
         }
     }

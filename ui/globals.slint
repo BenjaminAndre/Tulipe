@@ -1,3 +1,8 @@
+export global Logic {
+    callback notify(string);
+}
+
+
 export global Theme {
     in-out property <brush> primary-0 : #000000;
     in-out property <brush> primary-10 : #00201E;
@@ -11,22 +16,22 @@ export global Theme {
     in-out property <brush> secondary-90 : #CEE8E4;
     in-out property <brush> secondary-100 : #FFFFFF;
     
-    in-out property <string> font-family : "Roboto" ;
-    in-out property <int> font-size-display-large : 57;
-    in-out property <int> font-size-display-medium: 45;
-    in-out property <int> font-size-display-small : 36;
-    in-out property <int> font-size-headline-large : 32;
-    in-out property <int> font-size-headline-medium: 28;
-    in-out property <int> font-size-headline-small : 22;
-    in-out property <int> font-size-title-large : 22;
-    in-out property <int> font-size-title-medium: 16;
-    in-out property <int> font-size-title-small : 14;
-    in-out property <int> font-size-label-large : 14;
-    in-out property <int> font-size-label-medium: 12;
-    in-out property <int> font-size-label-small : 11;
-    in-out property <int> font-size-body-large : 16;
-    in-out property <int> font-size-body-medium: 14;
-    in-out property <int> font-size-body-small : 12;
+    in-out property <string> font-family : "Roboto Mono" ;
+    in-out property <length> font-size-display-large : 57px;
+    in-out property <length> font-size-display-medium: 45px;
+    in-out property <length> font-size-display-small : 36px;
+    in-out property <length> font-size-headline-large : 32px;
+    in-out property <length> font-size-headline-medium: 28px;
+    in-out property <length> font-size-headline-small : 22px;
+    in-out property <length> font-size-title-large : 22px;
+    in-out property <length> font-size-title-medium: 16px;
+    in-out property <length> font-size-title-small : 14px;
+    in-out property <length> font-size-label-large : 14px;
+    in-out property <length> font-size-label-medium: 12px;
+    in-out property <length> font-size-label-small : 11px;
+    in-out property <length> font-size-body-large : 16px;
+    in-out property <length> font-size-body-medium: 14px;
+    in-out property <length> font-size-body-small : 12px;
     
     out property <brush> primary : primary-40; 
     out property <brush> on-primary : primary-100; 
